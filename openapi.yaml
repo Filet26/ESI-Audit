@@ -1,0 +1,192 @@
+---
+openapi: 3.0.0
+info:
+  title: Audit API
+  description: provides audit information
+  contact:
+    email: dho95@my.bcit.ca
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+tags:
+  - name: Device
+    description: audit operations
+paths:
+  /usage/powerusageaudit:
+    get:
+      tags:
+        - Device
+      summary: get power usage data entry from history
+      description: gets power usage data entry from history
+      operationId: app.get_power_usage_reading
+      parameters:
+        - name: index
+          in: query
+          description: gets the power usage data entry at the specified index
+          required: false
+          schema:
+            type: integer
+            example: 10
+      responses:
+        "200":
+          description: successfully returned a power usage data entry
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/PowerUsage"
+        "400":
+          description: "invalid request"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Invalid index"
+        "404":
+          description: "index not found"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Index not found"
+  /usage/temperaturedataaudit:
+    get:
+      tags:
+        - Device
+      summary: get temperature data entry from history
+      description: gets temperature data entry from history
+      operationId: app.get_temperature_reading
+      parameters:
+        - name: index
+          in: query
+          description: gets the temperature data entry at the specified index
+          required: false
+          schema:
+            type: integer
+            example: 10
+      responses:
+        "200":
+          description: successfully returned a temperature data entry
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Temperature"
+        "400":
+          description: "invalid request"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Invalid index"
+        "404":
+          description: "index not found"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Index not found"
+  /usage/health:
+    get:
+      tags:
+        - Device
+      summary: get status of application
+      description: get status of application
+      operationId: app.get_healthcheck
+      responses:
+        "200":
+          description: "application is healthy"
+
+components:
+  schemas:
+    PowerUsage:
+      required:
+        - device_id
+        - electricity_cost_rate
+        - frequency
+        - home_id
+        - timestamp
+        - voltage
+        - watts
+        - trace_id
+      type: object
+      properties:
+        home_id:
+          type: string
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        device_id:
+          type: string
+          example: c290f1ee-6c54-4b01-90e6-d701748f0852
+        watts:
+          type: number
+          example: 1000
+        voltage:
+          type: number
+          example: 120
+        frequency:
+          type: number
+          example: 60
+        electricity_cost_rate:
+          type: number
+          example: 0.008
+        timestamp:
+          type: string
+          format: date-time
+          example: 2023-09-29T09:12:33.001Z
+        trace_id:
+          type: string
+          example: 808f486a-7ca5-4088-86c8-4cccc397c4ae
+    Temperature:
+      required:
+        - ambient_humidity
+        - ambient_temperature
+        - atmospheric_pressure
+        - device_id
+        - home_id
+        - outdoor_weather
+        - timestamp
+        - trace_id
+      type: object
+      properties:
+        home_id:
+          type: string
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        device_id:
+          type: string
+          example: c290f1ee-6c54-4b01-90e6-d701748f0852
+        ambient_temperature:
+          type: number
+          example: 23.88
+        ambient_humidity:
+          type: number
+          example: 99.2
+        outdoor_weather:
+          type: string
+          example: Sunny
+        atmospheric_pressure:
+          type: number
+          example: 1013.2
+        timestamp:
+          type: string
+          format: date-time
+          example: 2023-09-29T09:12:33.001Z
+        trace_id:
+          type: string
+          example: 808f486a-7ca5-4088-86c8-4cccc397c4ae

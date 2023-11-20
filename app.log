@@ -1,0 +1,61 @@
+2023-10-10 11:16:03,635 - basicLogger - INFO - Retrieving BP at index 1
+2023-10-10 11:16:46,198 - basicLogger - INFO - Retrieving BP at index 1
+2023-10-10 11:16:50,849 - basicLogger - INFO - Retrieving BP at index 1
+2023-10-10 11:17:24,133 - basicLogger - INFO - Retrieving BP at index 1
+2023-10-10 11:19:50,204 - basicLogger - INFO - Retrieving BP at index 1
+2023-10-10 11:23:20,526 - basicLogger - INFO - Retrieving BP at index 1
+2023-10-10 11:23:49,274 - basicLogger - INFO - Retrieving BP at index 1
+2023-10-10 11:23:49,316 - basicLogger - ERROR - No more messages found
+2023-10-10 11:23:49,316 - basicLogger - ERROR - Could not find BP at index 1
+2023-10-10 11:25:22,050 - basicLogger - INFO - Retrieving BP at index 1
+2023-10-10 11:26:34,843 - basicLogger - INFO - Retrieving BP at index 1
+2023-10-10 11:31:59,192 - basicLogger - INFO - Retrieving BP at index 1
+2023-10-10 11:34:16,119 - basicLogger - INFO - Retrieving BP at index 1
+2023-10-10 11:38:58,215 - basicLogger - INFO - Retrieving BP at index 1
+2023-10-10 11:39:44,882 - basicLogger - INFO - Retrieving BP at index 1
+2023-10-10 11:41:26,761 - basicLogger - INFO - Retrieving BP at index 1
+2023-10-10 11:41:27,807 - basicLogger - ERROR - No more messages found
+2023-10-10 11:41:27,807 - basicLogger - ERROR - Could not find BP at index 1
+2023-10-10 11:41:43,055 - basicLogger - INFO - Retrieving BP at index 1
+2023-10-10 11:42:06,077 - basicLogger - INFO - Retrieving BP at index 1
+2023-10-10 11:47:19,505 - basicLogger - INFO - Retrieving BP at index 1
+2023-10-10 11:47:43,122 - basicLogger - INFO - Retrieving BP at index 2
+2023-10-10 11:48:20,657 - basicLogger - INFO - Retrieving BP at index 0
+2023-10-10 12:02:50,006 - basicLogger - INFO - Retrieving BP at index 0
+2023-10-10 12:03:33,832 - basicLogger - INFO - Retrieving BP at index 0
+2023-10-10 12:08:17,537 - basicLogger - INFO - Retrieving BP at index 1
+2023-10-10 12:08:32,109 - basicLogger - INFO - Retrieving BP at index 2
+2023-10-10 12:08:56,356 - basicLogger - INFO - Retrieving BP at index 20
+2023-10-10 12:09:01,520 - basicLogger - INFO - Retrieving BP at index 30
+2023-10-10 12:09:02,610 - basicLogger - ERROR - No more messages found
+2023-10-10 12:09:02,610 - basicLogger - ERROR - Could not find BP at index 30
+2023-10-10 12:09:05,345 - basicLogger - INFO - Retrieving BP at index 29
+2023-10-10 12:09:06,440 - basicLogger - ERROR - No more messages found
+2023-10-10 12:09:06,440 - basicLogger - ERROR - Could not find BP at index 29
+2023-10-10 12:09:09,711 - basicLogger - INFO - Retrieving BP at index 28
+2023-10-10 12:09:10,803 - basicLogger - ERROR - No more messages found
+2023-10-10 12:09:10,803 - basicLogger - ERROR - Could not find BP at index 28
+2023-10-10 12:09:13,761 - basicLogger - INFO - Retrieving BP at index 27
+2023-10-10 12:09:14,847 - basicLogger - ERROR - No more messages found
+2023-10-10 12:09:14,847 - basicLogger - ERROR - Could not find BP at index 27
+2023-10-10 12:09:17,581 - basicLogger - INFO - Retrieving BP at index 26
+2023-10-10 12:09:18,678 - basicLogger - ERROR - No more messages found
+2023-10-10 12:09:18,678 - basicLogger - ERROR - Could not find BP at index 26
+2023-10-10 12:09:21,093 - basicLogger - INFO - Retrieving BP at index 25
+2023-10-10 12:15:26,177 - basicLogger - INFO - Retrieving BP at index 25
+2023-10-10 12:15:29,290 - basicLogger - INFO - Retrieving BP at index 26
+2023-10-10 12:50:58,996 - basicLogger - INFO - Retrieving temp reading at index 26
+2023-10-10 12:51:09,097 - basicLogger - INFO - Retrieving temp reading at index 500
+2023-10-10 12:51:10,235 - basicLogger - ERROR - No more messages found
+2023-10-10 12:51:10,235 - basicLogger - ERROR - Could not find BP at index 500
+2023-10-10 12:51:16,076 - basicLogger - INFO - Retrieving temp reading at index 200
+2023-10-10 12:51:17,218 - basicLogger - ERROR - No more messages found
+2023-10-10 12:51:17,219 - basicLogger - ERROR - Could not find BP at index 200
+2023-10-10 12:51:21,542 - basicLogger - INFO - Retrieving temp reading at index 150
+2023-10-10 12:51:22,691 - basicLogger - ERROR - No more messages found
+2023-10-10 12:51:22,692 - basicLogger - ERROR - Could not find BP at index 150
+2023-10-10 12:51:28,090 - basicLogger - INFO - Retrieving temp reading at index 100
+2023-10-10 12:51:29,219 - basicLogger - ERROR - No more messages found
+2023-10-10 12:51:29,219 - basicLogger - ERROR - Could not find BP at index 100
+2023-10-10 12:51:37,323 - basicLogger - INFO - Retrieving temp reading at index 50
+2023-10-10 12:51:54,042 - basicLogger - INFO - Retrieving powerusage at index 50

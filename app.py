@@ -1,13 +1,12 @@
-import connexion
-from connexion import NoContent
 import json
-import yaml
 import logging
 import logging.config
-from pykafka import KafkaClient
-from pykafka.common import OffsetType
-from flask_cors import CORS, cross_origin
 import os
+import connexion
+from connexion import NoContent
+import yaml
+from pykafka import KafkaClient
+
 
 if "TARGET_ENV" in os.environ and os.environ["TARGET_ENV"] == "test":
     print("In Test Environment")

@@ -73,7 +73,7 @@ def get_power_usage_reading(index):
     except:
         logger.error("No more messages found")
         logger.error("Could not find BP at index %d" % index)
-    return {"message": "Not Found : ()"}, 404
+    return {"message": "Not Found :"}, 404
 
 
 def get_temperature_reading(index):
